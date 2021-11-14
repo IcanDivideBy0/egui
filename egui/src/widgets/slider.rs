@@ -228,7 +228,7 @@ impl<'a> Slider<'a> {
         self
     }
 
-    /// Helper: equivalent to `self.precision(0).smallest_positive(1.0)`.
+    /// Helper: equivalent to `self.fixed_decimals(0).smallest_positive(1.0)`.
     /// If you use one of the integer constructors (e.g. `Slider::i32`) this is called for you,
     /// but if you want to have a slider for picking integer values in an `Slider::f64`, use this.
     pub fn integer(self) -> Self {
